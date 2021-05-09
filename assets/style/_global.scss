@@ -1,0 +1,69 @@
+//color variables
+$dark-blue: #001929;
+$light-blue: #009cf8;
+$bage-color: #fff7d6;
+$white-color: #f1faff;
+$golden-color: #f8ca25;
+$roasted-color: #f07b0e;
+//its just temporary
+.golden-color {
+	color: #f8ca25;
+}
+.roasted-color {
+	color: #f07b0e;
+}
+//*****************//
+
+// reseting stuff
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.3;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: $dark-blue;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+li,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+//resetting a
+a {
+	display: block;
+	text-decoration: none;
+	color: $white-color;
+}
+
+input,
+select,
+button {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}

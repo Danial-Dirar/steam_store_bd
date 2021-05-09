@@ -1,0 +1,41 @@
+.payment-method {
+	.method-container {
+		margin: 2.5rem auto;
+		max-width: clamp(25rem, 30vw, 40rem);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		img {
+			height: 6rem;
+			cursor: pointer;
+		}
+	}
+}
+
+.cryptocurrency-trade {
+    width: 70%;
+    margin: 5rem auto;
+	.crypto-trade-container {
+		@include flex-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+		text-align: center;
+        img{
+            height: 20rem;
+            margin: 2rem;
+        }
+		.crypto-trade-text-content {
+            h3{
+                max-width: 37rem;
+                margin: 2rem 0;
+            }
+			.crypto-trade-btns {
+                margin: 1rem;
+                @include flex-center;
+                a{
+                    margin: 1rem; 
+                }
+			}
+		}
+	}
+}

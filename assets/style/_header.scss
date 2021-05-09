@@ -1,0 +1,65 @@
+// responsive header coming soon
+
+header {
+	max-width: 80%;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	img {
+		height: 70px;
+		width: 70px;
+	}
+	ul {
+        // padding: 0;
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 2rem;
+        
+		li {
+            margin: 1rem;
+			a {
+				color: $bage-color;
+			}
+			// transition: 2s linear;
+			// will add transition later. use pseudo element
+			// a:hover {
+
+			// 	border-bottom: 2px solid $bage-color;
+			// }
+		}
+	}
+}
+
+@media (max-width: 1600px) {
+	header {
+		img {
+			height: 64px;
+			width: 64px;
+		}
+		ul {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	header {
+		ul {
+			font-size: 1.4rem;
+		}
+	}
+}
+//gotta have an hamburger menu later.
+@media (max-width: 800px) {
+	header {
+		img {
+			height: 48px;
+			width: 48px;
+		}
+		ul {
+			font-size: 1.2rem;
+		}
+	}
+}

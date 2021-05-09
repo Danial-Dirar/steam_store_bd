@@ -1,0 +1,469 @@
+.golden-color {
+  color: #f8ca25;
+}
+
+.roasted-color {
+  color: #f07b0e;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #001929;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #f1faff;
+}
+
+input,
+select,
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button_default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.75rem;
+  background-color: #009cf8;
+  height: 3.75rem;
+  width: 12rem;
+  border-radius: 0.75rem;
+  opacity: 0.9;
+}
+
+.button_default:hover {
+  opacity: 1;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.button_light {
+  background: none;
+  border-bottom: 2px solid #f8ca25;
+  border-radius: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.button_light:hover {
+  border-color: #009cf8;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.side-text {
+  margin: 2.5rem 0 0 0;
+  width: 50%;
+  width: clamp(27rem, 50vw, 50rem);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f1faff;
+}
+
+.section_header_1 {
+  color: #f1faff;
+  margin: 2.5rem 0 0 0;
+  font-size: 3rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.magnify {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(2, 1);
+          transform: scale(2, 1);
+}
+
+.active {
+  border-bottom: 2px solid #fff7d6;
+}
+
+#display-none {
+  display: none;
+}
+
+#display-block {
+  display: block;
+}
+
+header {
+  max-width: 80%;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  height: 70px;
+  width: 70px;
+}
+
+header ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+}
+
+header ul li {
+  margin: 1rem;
+}
+
+header ul li a {
+  color: #fff7d6;
+}
+
+@media (max-width: 1600px) {
+  header img {
+    height: 64px;
+    width: 64px;
+  }
+  header ul {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  header ul {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header img {
+    height: 48px;
+    width: 48px;
+  }
+  header ul {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  background-color: #009cf8;
+  height: 13.5rem;
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 2;
+}
+
+footer .contact {
+  width: 26rem;
+}
+
+footer .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article {
+  color: #f1faff;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+article h1 {
+  margin: 2.5rem 0 0 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+article .cta-container {
+  margin: 2.5rem 0 0 0;
+  min-width: clamp(35rem, 30vw, 40rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article p {
+  margin: 2.5rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+.featured-item {
+  width: 80%;
+  margin: auto;
+}
+
+.featured-item .card-container {
+  margin: 3rem auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.featured-item .card-container .card {
+  width: 12rem;
+  margin: 1.5rem 1rem;
+}
+
+.featured-item .card-container .card .card-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 16rem;
+  width: 12rem;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.featured-item .card-container .card .card-square img {
+  height: 6rem;
+}
+
+.featured-item .card-container .card .card-square h2 {
+  color: #fff7d6;
+}
+
+.featured-item .card-container .card .card-price-bracket-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.featured-item .card-container .card .card-price-bracket-1 a {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 3.5rem;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  margin: 0.8rem 0 0 0;
+}
+
+.payment-method .method-container {
+  margin: 2.5rem auto;
+  max-width: clamp(25rem, 30vw, 40rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.payment-method .method-container img {
+  height: 6rem;
+  cursor: pointer;
+}
+
+.cryptocurrency-trade {
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.cryptocurrency-trade .crypto-trade-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.cryptocurrency-trade .crypto-trade-container img {
+  height: 20rem;
+  margin: 2rem;
+}
+
+.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content h3 {
+  max-width: 37rem;
+  margin: 2rem 0;
+}
+
+.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content .crypto-trade-btns {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content .crypto-trade-btns a {
+  margin: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #009cf8;
+  -webkit-transition: 0.5ms linear;
+  transition: 0.5ms linear;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f8ca25;
+}
+
+::-webkit-scrollbar-track {
+  background: #001929;
+}
+/*# sourceMappingURL=main.css.map */

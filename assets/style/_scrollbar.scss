@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: $light-blue;
+    transition: 0.5ms linear;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    //will add transition later
+	background: $golden-color;
+}
+::-webkit-scrollbar-track {
+	background: $dark-blue;
+}

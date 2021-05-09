@@ -1,0 +1,19 @@
+footer{
+    background-color: $light-blue;
+    height: 13.5rem;
+    width: 100%;
+    padding: 2rem;
+    @include flex-center;
+    justify-content: space-around;
+    line-height: 2;
+    .contact{
+        width: 26rem;
+        div{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-self: center;
+            align-items: center;
+        }
+    }
+}
