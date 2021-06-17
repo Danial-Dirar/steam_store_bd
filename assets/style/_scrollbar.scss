@@ -1,6 +1,7 @@
 ::-webkit-scrollbar {
 	width: 13px;
 	height: 13px;
+    opacity: 0.5;
 }
 ::-webkit-scrollbar-thumb {
     background: $light-blue;
@@ -10,7 +11,14 @@
 ::-webkit-scrollbar-thumb:hover {
     //will add transition later
 	background: $golden-color;
+    opacity: 0.1;
 }
 ::-webkit-scrollbar-track {
 	background: $dark-blue;
 }
+
+// @media (max-width: 450px) {
+//     body{
+//         overflow: hidden;
+//     }
+// }

@@ -1,5 +1,6 @@
 @import "global";
 @import "mixins";
+@import "container";
 @import "header";
 @import "footer";
 @import "article";
@@ -7,4 +8,4 @@
 @import "paymentMethod"; // Payment method also contains crypto trade.
 
 //not so important ones
-@import "scrollbar";
+// @import "scrollbar";

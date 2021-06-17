@@ -13,10 +13,12 @@ article {
 	}
 	.cta-container {
 		margin: 2.5rem 0 0 0;
-		min-width: clamp(35rem, 30vw, 40rem);
 		display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: space-around;
+        gap: 35px;
 	}
 	p {
 		margin: 2.5rem 0 0 0;

@@ -1,8 +1,13 @@
 // responsive header coming soon
 
 header {
+    // position: sticky;
+    // top: 0;
+    // background-color: $dark-blue;
+    z-index: 10;
 	max-width: 80%;
-	margin: 1rem auto;
+	margin: 0 auto;
+    padding: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
