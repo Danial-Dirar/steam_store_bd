@@ -1,12 +1,27 @@
 .featured-item {
 	width: 80%;
 	margin: auto;
+
+	.bg-img-2 {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 100;
+		z-index: -20;
+		img {
+			height: 100%;
+			width: 100%;
+			opacity: 0.35;
+			object-fit: cover;
+		}
+	}
+
 	.card-container {
 		margin: 3rem auto;
 		width: 80%;
 		display: flex;
 		justify-content: space-around;
-		align-items: center;
+		align-items: flex-start;
 		flex-wrap: wrap;
 
 		.card {
@@ -34,19 +49,37 @@
 				h2 {
 					color: $bage-color;
 				}
+				&:hover {
+					@include buy-btn-transition();
+				}
 			}
 			.card-price-bracket-1 {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				flex-wrap: wrap;
-				a {
+				a,
+				.price-btn-1 {
 					cursor: pointer;
 
 					@include flex-center();
 
 					height: 2rem;
 					width: 3.5rem;
+					border: 2px solid $bage-color;
+					border-radius: 0.625rem;
+					margin: 0.8rem 0 0 0;
+					&:hover {
+						@include buy-btn-transition();
+					}
+				}
+				.price-btn-2 {
+					cursor: pointer;
+
+					@include flex-center();
+
+					height: 2rem;
+					width: 100%;
 					border: 2px solid $bage-color;
 					border-radius: 0.625rem;
 					margin: 0.8rem 0 0 0;

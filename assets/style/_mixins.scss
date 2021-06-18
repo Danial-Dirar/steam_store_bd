@@ -3,6 +3,12 @@
 	justify-content: center;
 	align-items: center;
 }
+@mixin buy-btn-transition{
+    transition: 0.45s linear;
+    transition: border 0.25s ease-out;
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+}
 
 .button_default {
 	@include flex-center();

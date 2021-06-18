@@ -26,6 +26,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #001929;
   width: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -148,15 +149,9 @@ button {
   display: block;
 }
 
-.container {
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
-}
-
 .container article,
 .container section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always on;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +165,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+}
+
+.container article {
+  height: 92vh;
 }
 
 .bg-img {
@@ -188,6 +186,9 @@ button {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   z-index: 10;
   max-width: 80%;
   margin: 0 auto;
@@ -347,6 +348,22 @@ article p {
   margin: auto;
 }
 
+.featured-item .bg-img-2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100;
+  z-index: -20;
+}
+
+.featured-item .bg-img-2 img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.35;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .featured-item .card-container {
   margin: 3rem auto;
   width: 80%;
@@ -355,9 +372,9 @@ article p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -396,6 +413,15 @@ article p {
   color: #fff7d6;
 }
 
+.featured-item .card-container .card .card-square:hover {
+  -webkit-transition: 0.45s linear;
+  transition: 0.45s linear;
+  -webkit-transition: border 0.25s ease-out;
+  transition: border 0.25s ease-out;
+  background-color: #001929;
+  border-color: #001929;
+}
+
 .featured-item .card-container .card .card-price-bracket-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,7 +436,8 @@ article p {
       flex-wrap: wrap;
 }
 
-.featured-item .card-container .card .card-price-bracket-1 a {
+.featured-item .card-container .card .card-price-bracket-1 a,
+.featured-item .card-container .card .card-price-bracket-1 .price-btn-1 {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,9 +455,37 @@ article p {
   margin: 0.8rem 0 0 0;
 }
 
+.featured-item .card-container .card .card-price-bracket-1 a:hover,
+.featured-item .card-container .card .card-price-bracket-1 .price-btn-1:hover {
+  -webkit-transition: 0.45s linear;
+  transition: 0.45s linear;
+  -webkit-transition: border 0.25s ease-out;
+  transition: border 0.25s ease-out;
+  background-color: #001929;
+  border-color: #001929;
+}
+
+.featured-item .card-container .card .card-price-bracket-1 .price-btn-2 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 100%;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  margin: 0.8rem 0 0 0;
+}
+
 .payment-method .method-container {
   margin: 2.5rem auto;
-  max-width: clamp(25rem, 30vw, 40rem);
+  min-width: clamp(25rem, 30vw, 40rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,13 +493,29 @@ article p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.payment-method .method-container img {
+.payment-method .method-container a img {
   height: 6rem;
   cursor: pointer;
+  stroke: #f1faff;
+}
+
+.payment-method .method-container a img:hover {
+  -webkit-transition: 0.42s ease-out;
+  transition: 0.42s ease-out;
+  border: #f8ca25 4px solid;
+  border-radius: 50%;
+}
+
+.payment-method .method-container a:hover {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .cryptocurrency-trade {
