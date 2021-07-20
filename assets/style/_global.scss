@@ -70,3 +70,18 @@ button {
 	border: none;
 	cursor: pointer;
 }
+
+//the modification for background img on every section
+.bg-img-section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100;
+    z-index: -20;
+    img {
+      height: 100%;
+      width: 100%;
+      opacity: 0.35;
+      object-fit: cover;
+    }
+  }

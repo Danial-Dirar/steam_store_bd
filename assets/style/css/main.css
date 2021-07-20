@@ -63,6 +63,22 @@ button {
   cursor: pointer;
 }
 
+.bg-img-section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100;
+  z-index: -20;
+}
+
+.bg-img-section img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.35;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .button_default {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,8 +202,6 @@ button {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 10;
   max-width: 80%;
@@ -348,22 +362,6 @@ article p {
   margin: auto;
 }
 
-.featured-item .bg-img-2 {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 100;
-  z-index: -20;
-}
-
-.featured-item .bg-img-2 img {
-  height: 100%;
-  width: 100%;
-  opacity: 0.35;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .featured-item .card-container {
   margin: 3rem auto;
   width: 80%;
@@ -496,6 +494,7 @@ article p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10;
 }
 
 .payment-method .method-container a img {
@@ -516,54 +515,5 @@ article p {
   transition: 0.4s ease-out;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.cryptocurrency-trade {
-  width: 70%;
-  margin: auto;
-}
-
-.cryptocurrency-trade .crypto-trade-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
-}
-
-.cryptocurrency-trade .crypto-trade-container img {
-  height: 20rem;
-  margin: 2rem;
-}
-
-.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content h3 {
-  max-width: 37rem;
-  margin: 2rem 0;
-}
-
-.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content .crypto-trade-btns {
-  margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.cryptocurrency-trade .crypto-trade-container .crypto-trade-text-content .crypto-trade-btns a {
-  margin: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

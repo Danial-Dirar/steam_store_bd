@@ -1,13 +1,9 @@
 .container {
-
-	// scroll-snap-type: y;
-	// overflow-y: scroll;
 	article,
 	section {
 		height: 100vh;
 		@include flex-center();
 		flex-direction: column;
-		// scroll-snap-align: center;
 	}
     article{
         height: 92vh;

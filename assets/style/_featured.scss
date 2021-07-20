@@ -1,21 +1,6 @@
 .featured-item {
 	width: 80%;
 	margin: auto;
-
-	.bg-img-2 {
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 100;
-		z-index: -20;
-		img {
-			height: 100%;
-			width: 100%;
-			opacity: 0.35;
-			object-fit: cover;
-		}
-	}
-
 	.card-container {
 		margin: 3rem auto;
 		width: 80%;
