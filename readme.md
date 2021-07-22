@@ -14,8 +14,6 @@ link:
 -   sticky header with opaque background after initial scroll.
 -   mobile responsive.
 -   step scrolls has to be added.
--   r6 credit
--   hover effect of the cards
     ##Credits
 
     -   ### landing photo
@@ -38,7 +36,7 @@ link:
     -   ### shop photo
         -   Photo by <a href="https://unsplash.com/@lorenzoherrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Herrera</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-#Daniel's note
+# Daniel's note
 
 -   xbox ultimate game pass
 -   steam code
@@ -53,3 +51,4 @@ link:
 -   playstation bundles
 -   steam wallet transfer
 -   epic store purchase (epic logo dite hobe)
+-   r6 credit
