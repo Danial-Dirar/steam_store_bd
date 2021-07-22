@@ -79,6 +79,19 @@ button {
      object-fit: cover;
 }
 
+.credit-container {
+  max-width: 100%;
+  position: absolute;
+  top: 95%;
+  left: 90%;
+}
+
+.credit-container a {
+  display: inline;
+  color: #009cf8;
+  text-decoration: underline;
+}
+
 .button_default {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +137,7 @@ button {
 .side-text {
   margin: 2.5rem 0 0 0;
   width: 50%;
-  width: clamp(27rem, 50vw, 50rem);
+  width: clamp(22rem, 50vw, 50rem);
   font-size: 1.5rem;
   font-weight: 400;
   color: #f1faff;
@@ -202,28 +215,38 @@ button {
 }
 
 header {
-  top: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   z-index: 10;
-  max-width: 80%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0;
   padding: 1rem;
+}
+
+header .header-container {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 80%;
 }
 
-header img {
+header .header-container img {
   height: 70px;
   width: 70px;
 }
 
-header ul {
+header .header-container ul {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,11 +257,11 @@ header ul {
   font-size: 2rem;
 }
 
-header ul li {
+header .header-container ul li {
   margin: 1rem;
 }
 
-header ul li a {
+header .header-container ul li a {
   color: #fff7d6;
 }
 
