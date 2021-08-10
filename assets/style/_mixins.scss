@@ -50,7 +50,7 @@
 .section_header_1 {
 	color: $white-color;
 	margin: 2.5rem 0 0 0;
-	font-size: 3rem;
+	font-size: clamp(2rem ,4vw, 3rem);
 	font-weight: bold;
 	@include flex-center();
 }

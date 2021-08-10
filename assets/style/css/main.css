@@ -146,7 +146,7 @@ button {
 .section_header_1 {
   color: #f1faff;
   margin: 2.5rem 0 0 0;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,7 +351,7 @@ article {
 
 article h1 {
   margin: 2.5rem 0 0 0;
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 4rem);
   font-weight: bold;
 }
 
@@ -383,125 +383,6 @@ article p {
 .featured-item {
   width: 80%;
   margin: auto;
-}
-
-.featured-item .card-container {
-  margin: 3rem auto;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.featured-item .card-container .card {
-  width: 12rem;
-  margin: 1.5rem 1rem;
-}
-
-.featured-item .card-container .card .card-square {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 16rem;
-  width: 12rem;
-  border: 2px solid #fff7d6;
-  border-radius: 0.625rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.featured-item .card-container .card .card-square img {
-  height: 6rem;
-}
-
-.featured-item .card-container .card .card-square h2 {
-  color: #fff7d6;
-}
-
-.featured-item .card-container .card .card-square:hover {
-  -webkit-transition: 0.45s linear;
-  transition: 0.45s linear;
-  -webkit-transition: border 0.25s ease-out;
-  transition: border 0.25s ease-out;
-  background-color: #001929;
-  border-color: #001929;
-}
-
-.featured-item .card-container .card .card-price-bracket-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.featured-item .card-container .card .card-price-bracket-1 a,
-.featured-item .card-container .card .card-price-bracket-1 .price-btn-1 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 2rem;
-  width: 3.5rem;
-  border: 2px solid #fff7d6;
-  border-radius: 0.625rem;
-  margin: 0.8rem 0 0 0;
-}
-
-.featured-item .card-container .card .card-price-bracket-1 a:hover,
-.featured-item .card-container .card .card-price-bracket-1 .price-btn-1:hover {
-  -webkit-transition: 0.45s linear;
-  transition: 0.45s linear;
-  -webkit-transition: border 0.25s ease-out;
-  transition: border 0.25s ease-out;
-  background-color: #001929;
-  border-color: #001929;
-}
-
-.featured-item .card-container .card .card-price-bracket-1 .price-btn-2 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 2rem;
-  width: 100%;
-  border: 2px solid #fff7d6;
-  border-radius: 0.625rem;
-  margin: 0.8rem 0 0 0;
 }
 
 .payment-method .method-container {
@@ -538,5 +419,154 @@ article p {
   transition: 0.4s ease-out;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.card-container {
+  margin: 3rem auto;
+  width: 80%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 400px);
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: center;
+}
+
+.card-container .card {
+  width: 12rem;
+  margin: 1.5rem 1rem;
+}
+
+.card-container .card .card-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 16rem;
+  width: 12rem;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.card-container .card .card-square img {
+  height: 6rem;
+}
+
+.card-container .card .card-square h2 {
+  color: #fff7d6;
+}
+
+.card-container .card .card-square:hover {
+  -webkit-transition: 0.45s linear;
+  transition: 0.45s linear;
+  -webkit-transition: border 0.25s ease-out;
+  transition: border 0.25s ease-out;
+  background-color: #001929;
+  border-color: #001929;
+}
+
+.card-container .card .card-price-bracket-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-container .card .card-price-bracket-1 a,
+.card-container .card .card-price-bracket-1 .price-btn-1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 3.5rem;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  margin: 0.8rem 0 0 0;
+}
+
+.card-container .card .card-price-bracket-1 a:hover,
+.card-container .card .card-price-bracket-1 .price-btn-1:hover {
+  -webkit-transition: 0.45s linear;
+  transition: 0.45s linear;
+  -webkit-transition: border 0.25s ease-out;
+  transition: border 0.25s ease-out;
+  background-color: #001929;
+  border-color: #001929;
+}
+
+.card-container .card .card-price-bracket-1 .price-btn-2 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 100%;
+  border: 2px solid #fff7d6;
+  border-radius: 0.625rem;
+  margin: 0.8rem 0 0 0;
+}
+
+.bg-img-shop {
+  z-index: -20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bg-img-shop img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
