@@ -1,0 +1,23 @@
+.non-functional-alert-container{
+    border: 3px solid #FF4242;
+    border-radius: 1rem;
+
+    padding: 0.5rem;
+    margin: 2.5rem 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+
+    width: 70%;
+    height: 12rem;
+
+    font-size: clamp(0.8rem, 3vw, 1.3rem);
+    color: white;
+
+    background-color: #FF4242;
+}

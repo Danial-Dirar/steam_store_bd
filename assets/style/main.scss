@@ -1,14 +1,16 @@
 @import "global";
 @import "mixins";
 @import "container";
-@import "header";
-@import "footer";
+@import "header";   //components
+@import "footer";   //components
 @import "article";
 @import "featured";
 @import "paymentMethod";
-//components
+//Components
 @import "card";
 @import "shop";
-
+//Pages
+//non fucntional alert
+@import "nonFunctionalAlert";
 //not so important ones
 // @import "scrollbar";
