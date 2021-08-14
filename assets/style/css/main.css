@@ -138,7 +138,7 @@ button {
   margin: 2.5rem 0 0 0;
   width: 50%;
   width: clamp(22rem, 50vw, 50rem);
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 400;
   color: #f1faff;
 }
@@ -242,8 +242,7 @@ header .header-container {
 }
 
 header .header-container img {
-  height: 70px;
-  width: 70px;
+  height: clamp(3rem, 3vw, 4rem);
 }
 
 header .header-container ul {
@@ -254,7 +253,7 @@ header .header-container ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
 header .header-container ul li {
@@ -263,32 +262,6 @@ header .header-container ul li {
 
 header .header-container ul li a {
   color: #fff7d6;
-}
-
-@media (max-width: 1600px) {
-  header img {
-    height: 64px;
-    width: 64px;
-  }
-  header ul {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  header ul {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 800px) {
-  header img {
-    height: 48px;
-    width: 48px;
-  }
-  header ul {
-    font-size: 1.2rem;
-  }
 }
 
 footer {
@@ -351,7 +324,7 @@ article {
 
 article h1 {
   margin: 2.5rem 0 0 0;
-  font-size: clamp(3rem, 4vw, 4rem);
+  font-size: clamp(2.75rem, 3vw, 4rem);
   font-weight: bold;
 }
 
@@ -377,7 +350,7 @@ article .cta-container {
 
 article p {
   margin: 2.5rem 0 0 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .featured-item {

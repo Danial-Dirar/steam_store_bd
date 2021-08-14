@@ -1,27 +1,27 @@
 article {
-	color: $white-color;
-	width: 80%;
-	margin: auto;
-	@include flex-center();
-	flex-direction: column;
+    color: $white-color;
+    width: 80%;
+    margin: auto;
+    @include flex-center();
+    flex-direction: column;
     text-align: center;
 
-	h1 {
-		margin: 2.5rem 0 0 0;
-		font-size: clamp(3rem, 4vw, 4rem);
-		font-weight: bold;
-	}
-	.cta-container {
-		margin: 2.5rem 0 0 0;
-		display: flex;
+    h1 {
+        margin: 2.5rem 0 0 0;
+        font-size: clamp(2.75rem, 3vw, 4rem);
+        font-weight: bold;
+    }
+    .cta-container {
+        margin: 2.5rem 0 0 0;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-		flex-direction: row;
+        flex-direction: row;
         gap: 35px;
-	}
-	p {
-		margin: 2.5rem 0 0 0;
-		font-size: 1.5rem;
-	}
+    }
+    p {
+        margin: 2.5rem 0 0 0;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
 }

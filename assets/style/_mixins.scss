@@ -1,9 +1,9 @@
 @mixin flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@mixin buy-btn-transition{
+@mixin buy-btn-transition {
     transition: 0.45s linear;
     transition: border 0.25s ease-out;
     background-color: $dark-blue;
@@ -11,61 +11,61 @@
 }
 
 .button_default {
-	@include flex-center();
+    @include flex-center();
 
-	font-size: 1.75rem;
+    font-size: 1.75rem;
 
-	background-color: $light-blue;
-	height: 3.75rem;
-	width: 12rem;
-	border-radius: 0.75rem;
-	opacity: 0.9;
+    background-color: $light-blue;
+    height: 3.75rem;
+    width: 12rem;
+    border-radius: 0.75rem;
+    opacity: 0.9;
 
-	&:hover {
-		opacity: 1;
-		transition: 0.2s linear;
-	}
+    &:hover {
+        opacity: 1;
+        transition: 0.2s linear;
+    }
 }
 .button_light {
-	background: none;
-	border-bottom: 2px solid $golden-color;
-	border-radius: 0;
-	width: fit-content;
-	height: fit-content;
-	&:hover {
-		border-color: $light-blue;
-		transition: 0.5s linear;
-	}
+    background: none;
+    border-bottom: 2px solid $golden-color;
+    border-radius: 0;
+    width: fit-content;
+    height: fit-content;
+    &:hover {
+        border-color: $light-blue;
+        transition: 0.5s linear;
+    }
 }
 
 .side-text {
-	margin: 2.5rem 0 0 0;
-	width: 50%;
-	width: clamp(22rem, 50vw, 50rem);
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: $white-color;
+    margin: 2.5rem 0 0 0;
+    width: 50%;
+    width: clamp(22rem, 50vw, 50rem);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 400;
+    color: $white-color;
 }
 
 .section_header_1 {
-	color: $white-color;
-	margin: 2.5rem 0 0 0;
-	font-size: clamp(2rem ,4vw, 3rem);
-	font-weight: bold;
-	@include flex-center();
+    color: $white-color;
+    margin: 2.5rem 0 0 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: bold;
+    @include flex-center();
 }
 
 // doesnt work
 .magnify {
-	transform-origin: top left;
-	transform: scale(2, 1);
+    transform-origin: top left;
+    transform: scale(2, 1);
 }
 .active {
-	border-bottom: 2px solid $bage-color;
+    border-bottom: 2px solid $bage-color;
 }
 #display-none {
-	display: none;
+    display: none;
 }
 #display-block {
-	display: block;
+    display: block;
 }
