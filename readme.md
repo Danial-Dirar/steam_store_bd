@@ -11,10 +11,9 @@ link: https://steam-store-bd.netlify.app/
 # Plans
 
 -   Add transitions to all the places that needs it.
--   sticky header with opaque background after initial scroll.
 -   mobile responsive.
+    - somewhat done
 -   step scrolls has to be added.
-    ##Credits
 
 # Todo's
 - Place all the pricing
@@ -23,20 +22,10 @@ link: https://steam-store-bd.netlify.app/
     - gaps in the mobile version of the website
     - Landing Page
     - about me
-- Hover to show the price (has to be implemented)
-- Alert to let people know that this website has no fuctionality.
-    - an red alert box to remind
 - A way to Credit the photographers
 # Daniel's note
--   xbox ultimate game pass
--   playstation bundles (upcoming)
--   steam wallet transfer
-    - 10 < 73 || 10 > 72 any ammount
--   epic store purchase (epic logo dite hobe)
-    - any game purchase
-    - per doller 
--   r6 credit
-    - 600 1200 1800 (unavailable) (gotta list the price)
+
+- none
 
 # Credits
  - 

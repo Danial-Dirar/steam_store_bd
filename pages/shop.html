@@ -37,25 +37,39 @@
         <script src="/assets/scripts/main.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="header-container">
-                <a href="#"
-                    ><img
-                        src="/assets/img/rasters/Steam_Store_Bangladesh_tp_2.png"
-                        alt="steam-store-bd icon"
-                /></a>
+        <header id="header">
+            <img
+                src="/assets/img/rasters/Steam_Store_Bangladesh_tp_2.png"
+                alt="ssb-logo"
+                class="logo"
+            />
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="#" class="active">Shop</a></li>
                     <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li>
+                        <a
+                            href="https://www.facebook.com/steamstorebd"
+                            target="_blank"
+                            ><img
+                                src="/assets/img/svg/facebook.svg"
+                                class="logo"
+                                style="height: clamp(40px, 3vw, 48px)"
+                                alt="facebook-page"
+                        /></a>
+                    </li>
                 </ul>
-
-                <a href="https://www.facebook.com/steamstorebd" target="_blank"
-                    ><img
-                        src="/assets/img/svg/facebook.svg"
-                        alt="steam-store-bd facebook page"
-                /></a>
-            </div>
+            </nav>
+            <label
+                for="nav-toggle"
+                class="nav-toggle-label"
+                id="nav-toggle-label"
+            >
+                <span></span>
+            </label>
         </header>
 
         <div class="container">
@@ -68,7 +82,7 @@
                 </div>
                 <h1 class="section_header_1" style="margin-top: 8rem">SHOP</h1>
                 <div class="non-functional-alert-container">
-                    <img src="/assets/img/svg/warning.svg" alt="warning">
+                    <img src="/assets/img/svg/warning.svg" alt="warning" />
                     <div class="alert-text-container">
                         <p>
                             This Website is under development. This is just for
@@ -87,7 +101,7 @@
                                 src="/assets/img/svg/steam.svg"
                                 alt="steam-logo giftcard"
                             />
-                            <h2>Steam (US)</h2>
+                            <h2>Steam (Global)</h2>
                         </div>
                         <div class="card-price-bracket-1">
                             <a href="#" class="price-btn-1">5$</a>

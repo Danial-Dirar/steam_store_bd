@@ -5,19 +5,19 @@ $bage-color: #fff7d6;
 $white-color: #f1faff;
 $golden-color: #f8ca25;
 $roasted-color: #f07b0e;
-//its just temporary
+$navbar-color: #009efa4d;
 .golden-color {
-    color: #f8ca25;
+    color: $golden-color;
 }
 .roasted-color {
-    color: #f07b0e;
+    color: $roasted-color;
 }
-//*****************//
 
 // reseting stuff
 html {
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *,
@@ -35,6 +35,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 h1,
@@ -71,29 +72,4 @@ button {
     cursor: pointer;
 }
 
-//the modification for background img on every section
-.bg-img-section {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 100;
-    z-index: -20;
-    img {
-        height: 100%;
-        width: 100%;
-        opacity: 0.35;
-        object-fit: cover;
-    }
-}
 
-.credit-container {
-    max-width: 100%;
-    position: absolute;
-    top: 95%;
-    left: 90%;
-    a {
-        display: inline;
-        color: $light-blue;
-        text-decoration: underline;
-    }
-}

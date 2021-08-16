@@ -37,25 +37,39 @@
         <script src="/assets/scripts/main.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="header-container">
-                <a href="#"
-                    ><img
-                        src="/assets/img/rasters/Steam_Store_Bangladesh_tp_2.png"
-                        alt="steam-store-bd icon"
-                /></a>
+        <header id="header">
+            <img
+                src="/assets/img/rasters/Steam_Store_Bangladesh_tp_2.png"
+                alt="ssb-logo"
+                class="logo"
+            />
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/pages/shop.html">Shop</a></li>
                     <li><a href="#" class="active">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li>
+                        <a
+                            href="https://www.facebook.com/steamstorebd"
+                            target="_blank"
+                            ><img
+                                src="/assets/img/svg/facebook.svg"
+                                class="logo"
+                                style="height: clamp(40px, 3vw, 48px)"
+                                alt="facebook-page"
+                        /></a>
+                    </li>
                 </ul>
-
-                <a href="https://www.facebook.com/steamstorebd" target="_blank"
-                    ><img
-                        src="/assets/img/svg/facebook.svg"
-                        alt="steam-store-bd facebook page"
-                /></a>
-            </div>
+            </nav>
+            <label
+                for="nav-toggle"
+                class="nav-toggle-label"
+                id="nav-toggle-label"
+            >
+                <span></span>
+            </label>
         </header>
 
         <div class="container">

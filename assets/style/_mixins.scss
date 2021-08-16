@@ -10,6 +10,20 @@
     border-color: $dark-blue;
 }
 
+.bg-img-section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100;
+    z-index: -20;
+    img {
+        height: 100%;
+        width: 100%;
+        opacity: 0.35;
+        object-fit: cover;
+    }
+}
+
 .button_default {
     @include flex-center();
 
@@ -60,12 +74,32 @@
     transform-origin: top left;
     transform: scale(2, 1);
 }
+
 .active {
-    border-bottom: 2px solid $bage-color;
+    border-top: 5px solid $bage-color;
 }
+@media screen and(max-width: 900px) {
+    .active {
+        border-top: none;
+        border-bottom: 5px solid $bage-color;
+    }
+}
+
 #display-none {
     display: none;
 }
 #display-block {
     display: block;
+}
+
+.credit-container {
+    max-width: 100%;
+    position: absolute;
+    top: 95%;
+    left: 90%;
+    a {
+        display: inline;
+        color: $light-blue;
+        text-decoration: underline;
+    }
 }
